@@ -1,44 +1,27 @@
-let year = date.getFullYear();
-const date = new Date();
-const students = 
+/*let year = date.getFullYear();
+const date = new Date();*/
+const character = 
 [
    {
-       firstName: "Dennis",
-       lastName: "Unknown",
-       DOB: 2007,
-       graduated: false,
-       age: function () {
-           //subtract his DOC from current year
-           return year - this.DOB;
-       },
-       siblings: [],
-       spouse: null,
+    Name: "Master Chief",
+    Primaryweapon: "Assault Rifle",
+    Race: "Human",
    },
    {
-       firstName: "Hey",
-       lastName: "Hen",
-       DOB: 2006,
-       graduated: false,
-       age: function () {
-           return year - this.DOB;
-       },
-       siblings: [],
-       spouse: null,
+    Name: "Arbiter",
+    Primaryweapon: "Energy Sword",
+    Race: "Sangheili",
    },
    {
-       firstName: "Hello",
-       lastName: "Lin",
-       DOB: 2004,
-       graduated: true,
-       age: function () {
-           return year - this.DOB;
-       },
-       siblings: [],
-       spouse: null,
+    Name: "Didact",
+    Primaryweapon: "Unknown",
+    Race: "Forerunner",
    },
 ];
 
-console.log(students)
+character.forEach((character) => console.log(character.Name));
+
+console.log(character);
 
 //const graduates = students.filter((student) => student.graduated === true);
 
@@ -49,3 +32,14 @@ console.log(students)
 //access individual element from array/List index, starts at 0
 //console.log(nums[0]);
 //nums.forEach((el) => console.log(el));
+
+/*firstName: "Dennis",
+lastName: "Unknown",
+DOB: 2007,
+graduated: false,
+age: function () {
+    //subtract his DOC from current year
+    return year - this.DOB;
+},
+siblings: [],
+spouse: null,*/
