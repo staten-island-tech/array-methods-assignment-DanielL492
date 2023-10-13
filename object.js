@@ -39,9 +39,7 @@ const character =
 
 //character.forEach((character) => console.log(character.appearance));
 character.forEach( function (hi) {
-    for (var i = 0; i < character.appearance.length; i++) {
-        console.log(appearance.length)
-    }
+\\\\\\    
 })
 
 /*for (var i = 0; i < character.appearance.length; i++) {
@@ -71,3 +69,4 @@ age: function () {
 },
 siblings: [],
 spouse: null,*/
+
