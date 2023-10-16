@@ -37,15 +37,7 @@ character.forEach((character) => console.log(character.Name));
 
 //2.
 
-//character.forEach((character) => console.log(character.appearance));
-/*character.forEach( function (hi) {*/
-
 character.forEach((character) => character.appearance.forEach((num) => console.log(num)));
-
-
-/*for (var i = 0; i < character.appearance.length; i++) {
-    console.log()
-}*/
 
 //3.
 
