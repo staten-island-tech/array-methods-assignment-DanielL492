@@ -32,41 +32,24 @@ const character =
    },
 ];
 
+//1.
 //character.forEach((character) => console.log(character.Name));
 
-
-//
+//2.
 
 //character.forEach((character) => console.log(character.appearance));
-character.forEach( function (hi) {
-\\\\\\    
-})
+/*character.forEach( function (hi) {
+
+})*/
 
 /*for (var i = 0; i < character.appearance.length; i++) {
     console.log()
 }*/
 
-//
+//3.
 
+const trilogygame = character.filter(character => {
+    return character.appearance === 3;
+});
 
-//const graduates = students.filter((student) => student.graduated === true);
-
-//students.forEach((students) => console.log(students.firstName))
-
-//let nums = [1, 2, 3, 4, 5];
-//()=> arrow functions auto return, this key word points global
-//access individual element from array/List index, starts at 0
-//console.log(nums[0]);
-//nums.forEach((el) => console.log(el));
-
-/*firstName: "Dennis",
-lastName: "Unknown",
-DOB: 2007,
-graduated: false,
-age: function () {
-    //subtract his DOC from current year
-    return year - this.DOB;
-},
-siblings: [],
-spouse: null,*/
-
+console.log(trilogygame);
