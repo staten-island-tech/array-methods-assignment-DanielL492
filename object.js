@@ -4,7 +4,7 @@ const character =
 [
    {
     Name: "Master Chief",
-    Primaryweapon: "Magnum",
+    Primaryweapon: "Assualt Rifle",
     Race: "Human",
     Alive: true,
     appearance: [1, 2, 3, 4, 5],
@@ -38,9 +38,10 @@ character.forEach((character) => console.log(character.Name));
 //2.
 
 //character.forEach((character) => console.log(character.appearance));
-/*character.forEach( function (hi) {
+/*character.forEach( function (hi) {*/
 
-})*/
+character.forEach((character) => character.appearance.forEach((num) => console.log(num)));
+
 
 /*for (var i = 0; i < character.appearance.length; i++) {
     console.log()
@@ -48,8 +49,5 @@ character.forEach((character) => console.log(character.Name));
 
 //3.
 
-const trilogygame = character.filter(el => {
-    return el.appearance === 3;
-});
-
-console.log(trilogygame);
+const weapon = character.filter((find) => find.Primaryweapon === "Assualt Rifle")
+console.log(weapon);
