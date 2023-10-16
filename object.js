@@ -33,7 +33,7 @@ const character =
 ];
 
 //1.
-//character.forEach((character) => console.log(character.Name));
+character.forEach((character) => console.log(character.Name));
 
 //2.
 
@@ -48,8 +48,8 @@ const character =
 
 //3.
 
-const trilogygame = character.filter(character => {
-    return character.appearance === 3;
+const trilogygame = character.filter(el => {
+    return el.appearance === 3;
 });
 
 console.log(trilogygame);
