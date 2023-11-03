@@ -35,13 +35,13 @@ const c3mp = ["A", "B", "C", "D", "E"];
 
 function btn1(arr, firstnum, lastnum) {
     arr[firstnum] = arr.splice(lastnum, 1, arr[firstnum]) [0]; //prevents E from turning into own array
-    console.log(arr); //for test 
+    //console.log(arr); //for test 
 }
 
 function btn2(arr, lastnum) {
     arr.unshift(arr[lastnum]);
     arr.splice(5, 1);
-    console.log(arr);
+    //console.log(arr);
 }
 
 function btn3(arr, firstnum, secondnum) {
@@ -53,29 +53,42 @@ function btn3(arr, firstnum, secondnum) {
 //btn2(c3mp, 4)
 //btn3(c3mp, 0, 1);
 
-function calc(btn, timespressed, arr) {
+function calc(btn, timespressed, arra) {
     if (btn = "1") {
         for (let i = 0; i<timespressed; i++) {
-            btn1(arr, arr.length[0], arr.length[4]);
+            btn1(arra, arra[0], arra[4]);
         }
+        console.log(arra);
     }
     else if (btn = "2") {
         for (let i = 0; i<timespressed; i++) {
-            btn2(arr, arr.length[4]);
+            btn2(arra, arra[4]);
         }
+        console.log(arra);
     }
     else if (btn = "3") {
         for (let i = 0; i<timespressed; i++) {
-            btn3(arr, arr.length[0], arr.length[1]);
+            btn3(arra, arra[0], arra[1]);
         }
+        console.log(arra);
     }
     else {
-        console.log(arr)
+        console.log(arra)
     }
 }
 
 calc(3, 1, c3mp);
 
+/*let repeat = Number(prompt("How many times do you want to run this sequence?"));
+
+function fib(repeat) {
+    const fibo = [0, 1]
+    let result = 0;
+    for(let i = 1; i <= arr.length; i++) {
+        result = arr.push(arr-[] + arr.length[]);
+    }
+    console.log(arr);
+}*/
 
 
 
