@@ -46,9 +46,47 @@ function btn2(arr, lastnum) {
 
 function btn3(arr, firstnum, secondnum) {
     arr[firstnum] = arr.splice(secondnum, 1, arr[firstnum]) [0];
-    console.log(arr); //for test
+    //console.log(arr); //for test
 }
 
 //btn1(c3mp, 0, 4);
-btn2(c3mp, 4)
+//btn2(c3mp, 4)
 //btn3(c3mp, 0, 1);
+
+function calc(btn, timespressed, arr) {
+    if (btn = "1") {
+        for (let i = 0; i<timespressed; i++) {
+            btn1(arr, arr.length[0], arr.length[4]);
+        }
+    }
+    else if (btn = "2") {
+        for (let i = 0; i<timespressed; i++) {
+            btn2(arr, arr.length[4]);
+        }
+    }
+    else if (btn = "3") {
+        for (let i = 0; i<timespressed; i++) {
+            btn3(arr, arr.length[0], arr.length[1]);
+        }
+    }
+    else {
+        console.log(arr)
+    }
+}
+
+calc(3, 1, c3mp);
+
+
+
+
+/*function spaces(s, y, t) {
+    let total = 0;
+    for (let i = 0; i<= s; i++) {
+        if (y[i] === "C" && t[i] === "C") {
+            total++;
+        }
+    }
+    console.log(total);
+}
+
+spaces(5, "CC..C", ".CC..");*/
